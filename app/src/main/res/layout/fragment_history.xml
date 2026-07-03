@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_dark">
+
+    <!-- Поиск + удалить всё -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/searchEdit"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:hint="@string/search_hint"
+            android:textColor="@color/text"
+            android:textColorHint="@color/muted"
+            android:background="@drawable/bg_edit"
+            android:paddingHorizontal="14dp"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            android:inputType="text"/>
+
+        <Button
+            android:id="@+id/btnDeleteAll"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_marginStart="8dp"
+            android:text="@string/delete_all"
+            android:textColor="#FFFF8A96"
+            android:textSize="12sp"
+            android:background="@drawable/bg_chip"
+            android:paddingHorizontal="14dp"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="32dp"
+        android:gravity="center"
+        android:text="@string/empty_history"
+        android:textColor="@color/muted"
+        android:visibility="gone"/>
+</LinearLayout>
