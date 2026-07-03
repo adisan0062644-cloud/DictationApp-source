@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/bg_dark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+        <!-- Ключи Gemini -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_keys"
+            android:textColor="@color/muted"
+            android:textSize="12sp"
+            android:textAllCaps="true"
+            android:letterSpacing="0.06"
+            android:layout_marginBottom="6dp"/>
+
+        <LinearLayout
+            android:id="@+id/keysContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+
+        <Button
+            android:id="@+id/btnAddKey"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="6dp"
+            android:text="+ ключ"
+            android:textColor="@color/accent"
+            android:background="@drawable/bg_chip"/>
+
+        <!-- Промт -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/settings_prompt"
+            android:textColor="@color/muted"
+            android:textSize="12sp"
+            android:textAllCaps="true"
+            android:letterSpacing="0.06"/>
+
+        <EditText
+            android:id="@+id/promptEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="220dp"
+            android:gravity="top"
+            android:padding="10dp"
+            android:background="@drawable/bg_edit"
+            android:textColor="@color/text"
+            android:textColorHint="@color/muted"
+            android:textSize="13sp"
+            android:fontFamily="monospace"
+            android:inputType="textMultiLine"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="6dp">
+
+            <Button
+                android:id="@+id/btnSavePrompt"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="@string/settings_save"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/accent"/>
+
+            <Button
+                android:id="@+id/btnResetPrompt"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:text="@string/settings_reset_prompt"
+                android:textColor="@color/text"
+                android:background="@drawable/bg_chip"/>
+        </LinearLayout>
+
+        <!-- Прочие настройки -->
+        <include layout="@layout/row_setting"
+            android:id="@+id/rowLang"
+            android:layout_marginTop="20dp"/>
+
+        <!-- Сборка секции через include внутри скролла (см. SettingsFragment — формируется программно для краткости) -->
+
+    </LinearLayout>
+</ScrollView>
