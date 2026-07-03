@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- 4 цветных квадрата 2x2, как просил пользователь -->
+    <!-- верхний-левый — синий -->
+    <path android:fillColor="#5B8CFF" android:pathData="M0,0 L54,0 L54,54 L0,54 z"/>
+    <!-- верхний-правый — фиолетовый -->
+    <path android:fillColor="#9D6FFF" android:pathData="M54,0 L108,0 L108,54 L54,54 z"/>
+    <!-- нижний-левый — оранжевый -->
+    <path android:fillColor="#FFB454" android:pathData="M0,54 L54,54 L54,108 L0,108 z"/>
+    <!-- нижний-правый — зелёный -->
+    <path android:fillColor="#3DDC97" android:pathData="M54,54 L108,54 L108,108 L54,108 z"/>
+
+    <!-- Маленький микрофон в каждом квадрате (одинаковый белый, простой) -->
+    <!-- top-left mic, центр ~27,27 -->
+    <group android:translateX="14" android:translateY="14">
+        <path android:fillColor="#FFFFFF"
+            android:pathData="M12,2 C13.66,2 15,3.34 15,5 L15,12 C15,13.66 13.66,15 12,15 C10.34,15 9,13.66 9,12 L9,5 C9,3.34 10.34,2 12,2 z M18,11 L18,12 C18,15.31 15.31,18 12,18 C8.69,18 6,15.31 6,12 L6,11 L4,11 L4,12 C4,16.08 7.05,19.44 11,19.92 L11,23 L9,23 L9,25 L15,25 L15,23 L13,23 L13,19.92 C16.95,19.44 20,16.08 20,12 L20,11 z"/>
+    </group>
+
+    <!-- top-right mic -->
+    <group android:translateX="68" android:translateY="14">
+        <path android:fillColor="#FFFFFF"
+            android:pathData="M12,2 C13.66,2 15,3.34 15,5 L15,12 C15,13.66 13.66,15 12,15 C10.34,15 9,13.66 9,12 L9,5 C9,3.34 10.34,2 12,2 z M18,11 L18,12 C18,15.31 15.31,18 12,18 C8.69,18 6,15.31 6,12 L6,11 L4,11 L4,12 C4,16.08 7.05,19.44 11,19.92 L11,23 L9,23 L9,25 L15,25 L15,23 L13,23 L13,19.92 C16.95,19.44 20,16.08 20,12 L20,11 z"/>
+    </group>
+
+    <!-- bottom-left mic -->
+    <group android:translateX="14" android:translateY="68">
+        <path android:fillColor="#FFFFFF"
+            android:pathData="M12,2 C13.66,2 15,3.34 15,5 L15,12 C15,13.66 13.66,15 12,15 C10.34,15 9,13.66 9,12 L9,5 C9,3.34 10.34,2 12,2 z M18,11 L18,12 C18,15.31 15.31,18 12,18 C8.69,18 6,15.31 6,12 L6,11 L4,11 L4,12 C4,16.08 7.05,19.44 11,19.92 L11,23 L9,23 L9,25 L15,25 L15,23 L13,23 L13,19.92 C16.95,19.44 20,16.08 20,12 L20,11 z"/>
+    </group>
+
+    <!-- bottom-right mic -->
+    <group android:translateX="68" android:translateY="68">
+        <path android:fillColor="#FFFFFF"
+            android:pathData="M12,2 C13.66,2 15,3.34 15,5 L15,12 C15,13.66 13.66,15 12,15 C10.34,15 9,13.66 9,12 L9,5 C9,3.34 10.34,2 12,2 z M18,11 L18,12 C18,15.31 15.31,18 12,18 C8.69,18 6,15.31 6,12 L6,11 L4,11 L4,12 C4,16.08 7.05,19.44 11,19.92 L11,23 L9,23 L9,25 L15,25 L15,23 L13,23 L13,19.92 C16.95,19.44 20,16.08 20,12 L20,11 z"/>
+    </group>
+
+</vector>
