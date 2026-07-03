@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Распознаватель</string>
+
+    <!-- Главный экран -->
+    <string name="title_history">История</string>
+    <string name="title_settings">Настройки</string>
+    <string name="search_hint">Поиск по истории…</string>
+    <string name="empty_history">Пока нет записей. Нажми на микрофон-иконку в углу экрана, чтобы продиктовать.</string>
+    <string name="delete_all">Удалить всё</string>
+    <string name="delete_all_confirm">Снести все записи и аудиофайлы?</string>
+
+    <!-- Запись -->
+    <string name="rec">REC</string>
+    <string name="pause">ПАУЗА</string>
+    <string name="ready">ГОТОВ</string>
+    <string name="processing">…</string>
+    <string name="notify_channel_name">Диктовка</string>
+    <string name="notify_channel_desc">Фоновый сервис для записи голоса и распознавания</string>
+    <string name="notify_recording">Идёт запись</string>
+    <string name="notify_open">Открыть</string>
+    <string name="notify_close">Закрыть</string>
+
+    <!-- Кнопки панели -->
+    <string name="cd_record">Запись</string>
+    <string name="cd_pause">Пауза / Продолжить</string>
+    <string name="cd_stop">Стоп и отправить (удерживать 2 сек)</string>
+    <string name="cd_open_app">Открыть приложение</string>
+    <string name="cd_hide_panel">Скрыть панель</string>
+
+    <!-- Настройки -->
+    <string name="settings_keys">API ключи Gemini</string>
+    <string name="settings_prompt">Промт для нормализации</string>
+    <string name="settings_lang">Язык распознавания</string>
+    <string name="settings_codec">Кодек записи</string>
+    <string name="settings_orient">Ориентация панели</string>
+    <string name="settings_panel_size">Размер панели</string>
+    <string name="settings_autocopy">Автокопирование в буфер</string>
+    <string name="settings_stop_protect">Защита стопа (удерживать 2 сек)</string>
+    <string name="settings_autodel">Автоудаление аудио</string>
+    <string name="settings_anchor_pos">Позиция якоря</string>
+    <string name="settings_save">Сохранить</string>
+    <string name="settings_reset_prompt">Сбросить промт на умолчание</string>
+    <string name="lang_ru">Русский</string>
+    <string name="lang_en">English</string>
+    <string name="lang_auto">Авто</string>
+    <string name="orient_v">Вертикальная (бок)</string>
+    <string name="orient_h">Горизонтальная (низ)</string>
+    <string name="size_s">Компактная</string>
+    <string name="size_m">Стандартная</string>
+    <string name="size_l">Просторная</string>
+    <string name="del_7d">Через 7 дней</string>
+    <string name="del_30d">Через 30 дней</string>
+    <string name="del_never">Никогда</string>
+    <string name="anchor_remember">Запоминать</string>
+    <string name="anchor_left">Слева по центру</string>
+    <string name="anchor_right">Справа по центру</string>
+
+    <!-- Доступ -->
+    <string name="perm_overlay_title">Нужен доступ «Поверх других приложений»</string>
+    <string name="perm_overlay_text">Чтобы панель диктовки появлялась над браузером или редактором, дай разрешение в настройках.</string>
+    <string name="perm_audio_title">Нужен доступ к микрофону</string>
+    <string name="perm_audio_text">Без микрофона запись голоса невозможна.</string>
+    <string name="perm_grant">Дать доступ</string>
+    <string name="perm_continue">Продолжить</string>
+    <string name="perm_notif_title">Показывать уведомление</string>
+    <string name="perm_notif_text">Чтобы панель работала в фоне, нужно разрешение на уведомления.</string>
+
+    <string name="copied">Скопировано в буфер</string>
+    <string name="error_no_keys">Добавь хотя бы один API ключ в настройках</string>
+    <string name="error_network">Нет связи с Gemini. Проверь интернет и ключи.</string>
+</resources>
